@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class = "cabecalho">
+            <h2>Cadastrar usuário</h2>
+        </div>
+
+        <div class = "cadastro">
+            <form id="formulario" action="/usuario" method="post">
+
+                <label id="label-nome" for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label id="label-senha" for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <label id="label-idade" for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="0" max="130" required>
+
+                <button type="submit">Cadastrar</button>
+
+
+            </form>
+        </div>
+
+        <script type="module" src="./dist/main.js" defer></script>
+
+</body>
+</html>
